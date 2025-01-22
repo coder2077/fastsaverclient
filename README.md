@@ -1,7 +1,7 @@
 
 # FastSaverClient
 
-A Python async client for interacting with the FastSaver API.
+A Python async client for interacting with [fastsaverapi.com](https://fastsaverapi.com).
 
 
 ## Installation
@@ -89,3 +89,6 @@ if __name__ == "__main__":
   import asyncio
   asyncio.run(main())
 ```
+
+[Contact me on Telegram](https://t.me/coder2077)
+
