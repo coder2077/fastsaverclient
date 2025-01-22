@@ -14,7 +14,7 @@ Install via pip:
 pip install fastsaverclient
 ```
 ## Available Methods
- **- get_info(url: str, db_cache: bool = False)**
+ - **get_info(url: str, db_cache: bool = False)**
 Fetches media details, including captions, thumbnails, and download URLs.
 
  - download_audio(shortcode: str)
