@@ -96,5 +96,5 @@ if __name__ == "__main__":
 
 2. **Telegram Bot Permissions**: To use `copy_message`, ensure the bot is an admin in the channel. For help with bot permissions, contact support.
 
-[Contact me on Telegram](https://t.me/coder2077)
+[Support](https://t.me/coder2077)
 
