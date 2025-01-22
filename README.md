@@ -1,9 +1,7 @@
 
 # FastSaverClient
 
-A Python client for interacting with the FastSaver API to download and manage media content.
-
-
+A Python async client for interacting with the FastSaver API.
 
 
 ## Installation
@@ -15,34 +13,28 @@ pip install fastsaverclient
 ```
 ## Available Methods
  - **get_info(url: str, db_cache: bool = False)**
-Fetches media details, including captions, thumbnails, and download URLs.
+Fetch media details from the given URL. 
 
- - download_audio(shortcode: str)
-Downloads audio from YouTube using the video shortcode.
+ - **download_audio(shortcode: str)**
+Download audio from YouTube.
 
- - get_top_musics(country: str, page: int)
-Fetches the top Shazam music rankings for a specific country or globally.
+ - **get_top_musics(country: str, page: int)**
+Get top musics based on Shazam's rankings.
 
- - search_music(query: str, page: int = 1)
-Searches YouTube for music based on a query.
+ - **search_music(query: str, page: int = 1)**
+Search for music from YouTube.
 
- - recognize_music(file_url: str)
-Recognizes a song from an audio or video file URL.
+ - **recognize_music(file_url: str)**
+Recognize music from an audio or video file using Shazam.
 
-6. get_music_lyrics(track_url: str)
-Fetches lyrics for a recognized track.
+ - **get_music_lyrics(track_url: str)**
+Get lyrics for a music track using Shazam.
 
-7. get_usage_stats(filter_by_token: bool = True)
-Fetches API usage statistics for your account.
+ - **get_usage_stats(filter_by_token: bool = True)**
+Get usage statistics for the FastSaver API.
 
-8. save_video(url: str, file_name: Optional[str] = None)
-Downloads and saves a video locally.
-
-9. add_cached_media(secret: str, shortcode: str, channel_id: int, message_id: int, media_type: str)
-Adds a media item to the API's cache (private method).
-
-10. close()
-Closes the underlying HTTP client.
+ - **save_video(url: str, file_name: Optional[str] = None)**
+Save a video from a given URL.
 
 ## Usage/Examples
 
