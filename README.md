@@ -54,3 +54,17 @@ if __name__ == "__main__":
   asyncio.run(main())
 ```
 
+Downloading youtube video and send it telegram user
+```python
+from fastsaverclient import FastSaverClient
+
+client = FastSaverClient(token="API_TOKEN_HERE")
+
+async def main():
+  resp = await client.get_info("https://www.instagram.com/reel/Bzn_mYKAltF/")
+  print(resp['download_url'])
+
+if __name__ == "__main__":
+  import asyncio
+  asyncio.run(main())
+```
