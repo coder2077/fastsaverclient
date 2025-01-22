@@ -38,16 +38,16 @@ pip install fastsaverclient
   Save a video from a given URL.
 
 
-## Examples
+## Usage
 
 ```python
 from fastsaverclient import FastSaverClient
 
-client = FastSaverClient(token="yGo77fiHlgDOE9L0qHPcJHHF")
+client = FastSaverClient(token="API_TOKEN_HERE")
 
 async def main():
   resp = await client.get_info("https://www.instagram.com/reel/Bzn_mYKAltF/")
-  print(resp)
+  print(resp['download_url'])
 
 if __name__ == "__main__":
   import asyncio
