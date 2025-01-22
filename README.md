@@ -90,5 +90,11 @@ if __name__ == "__main__":
   asyncio.run(main())
 ```
 
+### Notes:
+
+1. **For YouTube Audio**: Use the `download_audio` method instead of `get_info` if you're only downloading audio.
+
+2. **Telegram Bot Permissions**: To use `copy_message`, ensure the bot is an admin in the channel. For help with bot permissions, contact support.
+
 [Contact me on Telegram](https://t.me/coder2077)
 
