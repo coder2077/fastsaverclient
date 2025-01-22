@@ -8,35 +8,37 @@ A Python async client for interacting with the FastSaver API.
 
 Install via pip:
 
-```
+```bash
 pip install fastsaverclient
 ```
-## Available Methods
- - **get_info(url: str, db_cache: bool = False)**
-Fetch media details from the given URL. 
+### Available Methods
 
- - **download_audio(shortcode: str)**
-Download audio from YouTube.
+- **`get_info(url: str, db_cache: bool = False)`**  
+  Fetch media details from the given URL.
 
- - **get_top_musics(country: str, page: int)**
-Get top musics based on Shazam's rankings.
+- **`download_audio(shortcode: str)`**  
+  Download audio from YouTube.
 
- - **search_music(query: str, page: int = 1)**
-Search for music from YouTube.
+- **`get_top_musics(country: str, page: int)`**  
+  Get top musics based on Shazam's rankings.
 
- - **recognize_music(file_url: str)**
-Recognize music from an audio or video file using Shazam.
+- **`search_music(query: str, page: int = 1)`**  
+  Search for music from YouTube.
 
- - **get_music_lyrics(track_url: str)**
-Get lyrics for a music track using Shazam.
+- **`recognize_music(file_url: str)`**  
+  Recognize music from an audio or video file using Shazam.
 
- - **get_usage_stats(filter_by_token: bool = True)**
-Get usage statistics for the FastSaver API.
+- **`get_music_lyrics(track_url: str)`**  
+  Get lyrics for a music track using Shazam.
 
- - **save_video(url: str, file_name: Optional[str] = None)**
-Save a video from a given URL.
+- **`get_usage_stats(filter_by_token: bool = True)`**  
+  Get usage statistics for the FastSaver API.
 
-## Usage/Examples
+- **`save_video(url: str, file_name: Optional[str] = None)`**  
+  Save a video from a given URL.
+
+
+## Examples
 
 ```python
 from fastsaverclient import FastSaverClient
